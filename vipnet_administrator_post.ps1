@@ -39,7 +39,7 @@ Function Get-NetworkNumber {
 }
 
 $ScriptPath = split-path -parent $MyInvocation.MyCommand.Definition
-$ini = Get-IniContent "$ScriptPath\post_administrator.ini"
+$ini = Get-IniContent "$ScriptPath\vipnet_administrator_post.ini"
 $CurlPath = $ini["settings"]["CurlPath"]
 $NCCLogLastLineReadNumberPath = $ini["settings"]["NCCLogLastLineReadNumberPath"]
 $WebAuthToken = $ini["settings"]["WebAuthToken"]
